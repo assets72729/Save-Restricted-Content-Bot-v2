@@ -74,7 +74,7 @@ async def token_handler(client, message):
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://vault.pictures/p/f50c280699674030a9ba102a829c128a"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/Modiji_Bots")
+        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/KdramaTalkies")
         premium = InlineKeyboardButton("Get Premium", url="https://t.me/NkkwkslBot")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
@@ -86,7 +86,7 @@ async def token_handler(client, message):
             caption=(
                 "Hi 👋 Welcome, Wanna intro...?\n\n"
                 "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
-                "✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more."
+                "✳️ Simply send the post link of a public channel. For private channels, do /token /plan /login. Send /help to know more."
             ),
             reply_markup=keyboard
         )
