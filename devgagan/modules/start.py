@@ -207,7 +207,7 @@ async def plan(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> 💰**Premium Price**\n\n🚀 Premium Features\n ✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos from channel/group/bots🎥\n"
+        "> 💰**Premium Price**\n\n🚀 Premium Features\n✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos & files from anywhere\n\n🔹Pricing:\n▸ ₹19 ┇ 1 Week\n▸ ₹35 ┇ 10 Days\n▸ ₹50 ┇20 Days\n▸ ₹70 ┇1 Month\n▸ ₹169┇ 3 Months\n▸ ₹ 319┇ 6 Months\n▸ ₹599 ┇ 1 Months\n▸ ₹1.5ᴋ ┇ Vild Till Exist\n"
     )
      
     buttons = InlineKeyboardMarkup(
