@@ -85,8 +85,8 @@ async def token_handler(client, message):
             msg.photo.file_id,
             caption=(
                 "Hi 👋 Welcome, Wanna intro...?\n\n"
-                "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
-                "✳️ Simply send the post link of a public channel. For private channels, do /token /plan /login. Send /help to know more."
+                "✳️ 👉 What I Can Do:\n✨ Save posts from channels and groups where forwarding is off.\n✨ Easily fetch messages from public channels by sending their post links.\n✨ For private channels, use /login to access content securely.\n✨ Need assistance? Just type /help and I'll guide you!\n"
+                "\n\n👉 Premium Features:\n🔹 Use /token to get 3 hours of free premium access.\n🔹 Want unlimited access? Use /Plan to unlock premium features.\n🔹 Premium users enjoy faster processing, unlimited saves, and priority support.\n\n📌 Getting Started:\n✅ Send a post link from a public channel to save it instantly.\n✅ If the channel is private, use /login before sending the link.\n✅ For additional commands, check /help anytime! \n\nHappy saving!🚀"
             ),
             reply_markup=keyboard
         )
