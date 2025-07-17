@@ -192,7 +192,7 @@ async def terms(client, message):
 @app.on_message(filters.command("plan") & filters.private)
 async def plan(client, message):
     plan_text = (
-        "> 💰 **Premium Price**:\n\n \n"
+        "> 💰 **Premium Price**:\n\n🚀 Premium Features\n ✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos from channel/group/bots🎥\n"
     )
      
     buttons = InlineKeyboardMarkup(
@@ -207,7 +207,7 @@ async def plan(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> 💰**Premium Price**\n\n \n"
+        "> 💰**Premium Price**\n\n🚀 Premium Features\n ✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos from channel/group/bots🎥\n"
     )
      
     buttons = InlineKeyboardMarkup(
