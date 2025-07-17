@@ -73,9 +73,9 @@ async def token_handler(client, message):
     msg = await app.get_messages(chat_id, 796)
     user_id = message.chat.id
     if len(message.command) <= 1:
-        image_url = "https://vault.pictures/p/f50c280699674030a9ba102a829c128a"
+        image_url = "https://graph.org/file/ffae3d01dcdd6359106fd-c0fd8ab0d2c46539be.jpg"
         join_button = InlineKeyboardButton("Join Channel", url="https://t.me/KdramaTalkies")
-        premium = InlineKeyboardButton("Get Premium", url="https://t.me/NkkwkslBot")   
+        premium = InlineKeyboardButton("Contact Admin", url="https://t.me/NkkwkslBot")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
@@ -85,7 +85,7 @@ async def token_handler(client, message):
             msg.photo.file_id,
             caption=(
                 "Hi 👋 Welcome, Wanna intro...?\n\n"
-                "✳️ 👉 What I Can Do:\n✨ Save posts from channels and groups where forwarding is off.\n✨ Easily fetch messages from public channels by sending their post links.\n✨ For private channels, use /login to access content securely.\n✨ Need assistance? Just type /help and I'll guide you!\n"
+                "👉 What I Can Do:\n✨ Save posts from channels and groups where forwarding is off.\n✨ Easily fetch messages from public channels by sending their post links.\n✨ For private channels, use /login to access content securely.\n✨ Need assistance? Just type /help and I'll guide you!\n"
                 "\n\n👉 Premium Features:\n🔹 Use /token to get 3 hours of free premium access.\n🔹 Want unlimited access? Use /Plan to unlock premium features.\n🔹 Premium users enjoy faster processing, unlimited saves, and priority support.\n\n📌 Getting Started:\n✅ Send a post link from a public channel to save it instantly.\n✅ If the channel is private, use /login before sending the link.\n✅ For additional commands, check /help anytime! \n\nHappy saving!🚀"
             ),
             reply_markup=keyboard
