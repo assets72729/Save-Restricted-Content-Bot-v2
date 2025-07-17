@@ -231,7 +231,7 @@ async def see_terms(client, callback_query):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Upgrade To Premium", url="https://t.me/NkkwkslBot")],
+            [InlineKeyboardButton("💬 Contact Us", url="https://t.me/NkkwkslBot")],
         ]
     )
     await callback_query.message.edit_text(terms_text, reply_markup=buttons)
