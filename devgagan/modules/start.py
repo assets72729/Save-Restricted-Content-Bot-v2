@@ -192,52 +192,7 @@ async def terms(client, message):
 @app.on_message(filters.command("plan") & filters.private)
 async def plan(client, message):
     plan_text = (
-        "> 💰 **Premium Price**:\n\n <b><u>Premium Features</u></b>
-✅ No verification every 2 hours ⏳
-✅ Upload in bulk (up to <b>2000 files</b>) 📂
-✅ Instantly skip the 300-second wait ⏱️
-✅ Extract <b>unlimited videos</b> from channel/group/bots 🎥
-
-<b>🔹 Free Plan</b>
-⏳ Validity: Unlimited  
-💰 Price: ₹0 / $0.00 USDT  
-❌ Limited features  
-❌ Limited downloads
-
-<b>🔟 10-Day Plan</b>
-💰 Price: ₹50 🇮🇳 / $0.80 USDT  
-⏳ Validity: 10 days  
-💡 Approx ₹5/day  
-🎥 Extract <b>unlimited videos</b>
-
-<b>💰 20-Day Plan</b>
-💰 Price: ₹80 🇮🇳 / $1.10 USDT  
-⏳ Validity: 20 days  
-💡 Approx ₹4/day  
-🎥 Extract <b>unlimited videos</b>
-
-<b>🏆 Monthly Plan (Best Value)</b>
-💰 Price: ₹110 🇮🇳 / $1.80 USDT  
-⏳ Validity: 30 days  
-💡 Just ₹3.66/day  
-🎥 Extract <b>unlimited videos</b>
-
-<b>📌 Payment Methods:</b>
-- <b>UPI ID:</b> <code>jitendravishwakarma7653@okaxis</code>
-- <b>QR Code:</b> <a href="https://telegram.me/filexshare_bot?start=AI1T_NDM5Mw==">Pay via UPI</a>
-- <b>Crypto (Binance):</b> <a href="https://telegram.me/filexshare_bot?start=AI1T_ODgwNA==">Pay via Binance</a>
-
-<b>📤 After Payment:</b>
-1️⃣ Send a payment screenshot below 👇  
-2️⃣ Contact <a href="https://t.me/Jitendra7653">Admin</a> to activate your premium 🤝
-
-💌 <i>Thank you for supporting this project! ❤️</i>
-"""
-
-# Example for sending this text via Pyrogram
-@app.on_message(filters.command("premium"))
-async def premium_info(client, message):
-    await message.reply(PREMIUM_TEXT, disable_web_page_preview=True)\n"
+        "> 💰 **Premium Price**:\n\n \n"
     )
      
     buttons = InlineKeyboardMarkup(
@@ -252,52 +207,7 @@ async def premium_info(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> 💰**Premium Price**\n\n <b><u>Premium Features</u></b>
-✅ No verification every 2 hours ⏳
-✅ Upload in bulk (up to <b>2000 files</b>) 📂
-✅ Instantly skip the 300-second wait ⏱️
-✅ Extract <b>unlimited videos</b> from channel/group/bots 🎥
-
-<b>🔹 Free Plan</b>
-⏳ Validity: Unlimited  
-💰 Price: ₹0 / $0.00 USDT  
-❌ Limited features  
-❌ Limited downloads
-
-<b>🔟 10-Day Plan</b>
-💰 Price: ₹50 🇮🇳 / $0.80 USDT  
-⏳ Validity: 10 days  
-💡 Approx ₹5/day  
-🎥 Extract <b>unlimited videos</b>
-
-<b>💰 20-Day Plan</b>
-💰 Price: ₹80 🇮🇳 / $1.10 USDT  
-⏳ Validity: 20 days  
-💡 Approx ₹4/day  
-🎥 Extract <b>unlimited videos</b>
-
-<b>🏆 Monthly Plan (Best Value)</b>
-💰 Price: ₹110 🇮🇳 / $1.80 USDT  
-⏳ Validity: 30 days  
-💡 Just ₹3.66/day  
-🎥 Extract <b>unlimited videos</b>
-
-<b>📌 Payment Methods:</b>
-- <b>UPI ID:</b> <code>jitendravishwakarma7653@okaxis</code>
-- <b>QR Code:</b> <a href="https://telegram.me/filexshare_bot?start=AI1T_NDM5Mw==">Pay via UPI</a>
-- <b>Crypto (Binance):</b> <a href="https://telegram.me/filexshare_bot?start=AI1T_ODgwNA==">Pay via Binance</a>
-
-<b>📤 After Payment:</b>
-1️⃣ Send a payment screenshot below 👇  
-2️⃣ Contact <a href="https://t.me/Jitendra7653">Admin</a> to activate your premium 🤝
-
-💌 <i>Thank you for supporting this project! ❤️</i>
-"""
-
-# Example for sending this text via Pyrogram
-@app.on_message(filters.command("premium"))
-async def premium_info(client, message):
-    await message.reply(PREMIUM_TEXT, disable_web_page_preview=True)\n"
+        "> 💰**Premium Price**\n\n \n"
     )
      
     buttons = InlineKeyboardMarkup(
