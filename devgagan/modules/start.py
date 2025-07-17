@@ -48,7 +48,7 @@ async def set(_, message):
         BotCommand("session", "🧵 Generate Pyrogramv2 session"),
         BotCommand("settings", "⚙️ Personalize things"),
         BotCommand("stats", "📊 Get stats of the bot"),
-        BotCommand("plan", "🗓️ Check our premium plans"),
+        BotCommand("upgrade", "🗓️ Check our premium plans"),
         BotCommand("terms", "🥺 Terms and conditions"),
         BotCommand("speedtest", "🚅 Speed of server"),
         BotCommand("lock", "🔒 Protect channel from extraction"),
