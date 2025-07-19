@@ -48,7 +48,7 @@ async def set(_, message):
         BotCommand("session", "🧵 Generate Pyrogramv2 session"),
         BotCommand("settings", "⚙️ Personalize things"),
         BotCommand("stats", "📊 Get stats of the bot"),
-        BotCommand("upgrade", "🗓️ Check our premium plans"),
+        BotCommand("plan", "🗓️ Check our premium plans"),
         BotCommand("terms", "🥺 Terms and conditions"),
         BotCommand("speedtest", "🚅 Speed of server"),
         BotCommand("lock", "🔒 Protect channel from extraction"),
@@ -192,13 +192,13 @@ async def terms(client, message):
 @app.on_message(filters.command("plan") & filters.private)
 async def plan(client, message):
     plan_text = (
-        "> 💰 **Upgrade To Premium**:\n\n🚀 Premium Features\n✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos & files from anywhere🎥\n\n🔹Pricing:\n▸ ₹39 ┇ 1 Week\n▸ ₹50 ┇ 10 Days\n▸ ₹70 ┇20 Days\n▸ ₹80 ┇1 Month\n▸ ₹169┇ 3 Months\n▸ ₹ 319┇ 6 Months\n▸ ₹599 ┇ 1 Year\n▸ ₹1.5ᴋ ┇ Vild Till Exist\n\n🌐For International Members\n▸ $2 ┇1 Month\n▸ $3 ┇ 3 Months\n▸ $6 ┇ 6 Months\n▸ $9 ┇ 1 Year\n▸ $18┇ Vild Till Exist\n\n📌 Payment Methods:\n- UPI ID: dramawave7-1@okaxis\n- QR Code: Pay via UPI\n- Crypto (Binance) & Paypal\n\n📤 After Payment:\n1️⃣ Send a payment screenshot below👇\n2️⃣ Contact Admin to activate your Premium\n\n💌 Thank you for supporting this project!❤️\n"
+        "> 💰 **Upgrade To Premium**:\n\n🚀 Premium Features\n✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos & files from anywhere🎥\n\n🔹Pricing:\n▸ ₹39 ┇ 1 Week\n▸ ₹50 ┇ 14 Days\n▸ ₹70 ┇20 Days\n▸ ₹80 ┇1 Month\n▸ ₹169┇ 3 Months\n▸ ₹ 319┇ 6 Months\n▸ ₹599 ┇ 1 Year\n▸ ₹1.5ᴋ ┇ Vild Till Exist\n\n🌐For International Members\n▸ $2 ┇1 Month\n▸ $3 ┇ 3 Months\n▸ $6 ┇ 6 Months\n▸ $9 ┇ 1 Year\n▸ $18┇ Vild Till Exist\n\n📌 Payment Methods:\n- UPI ID: dramawave7-1@okaxis\n- QR Code: Pay via UPI\n- Crypto (Binance) & Paypal\n\n📤 After Payment:\n1️⃣ Send a payment screenshot below👇\n2️⃣ Contact Admin to activate your Premium\n\n💌 Thank you for supporting this project!❤️\n"
     )
      
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("📜 Pay Here", url="https://assets72729.github.io/PayWeb/")],
-            [InlineKeyboardButton("💬 Send Screenshot", url="https://t.me/NkkwkslBot")],
+            [InlineKeyboardButton("📋 Pay Here", url="https://assets72729.github.io/PayWeb/")],
+            [InlineKeyboardButton("💬 Contact Admin", url="https://t.me/Nkkwksl")],
         ]
     )
     await message.reply_text(plan_text, reply_markup=buttons)
@@ -207,13 +207,13 @@ async def plan(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> 💰**Upgrade To Premium**\n\n🚀 Premium Features\n✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos & files from anywhere🎥\n\n🔹Pricing:\n▸ ₹39┇ 1 Week\n▸ ₹50 ┇ 10 Days\n▸ ₹70┇ 20 Days\n▸ ₹80┇ 1 Month\n▸ ₹169 ┇ 3 Months\n▸ ₹ 319┇ 6 Months\n▸ ₹599┇ 1 year\n▸ ₹1.5ᴋ┇ Vild Till Exist\n\n🌐For International Members\n▸ $2 ┇1 Month\n▸ $3 ┇ 3 Months\n▸ $6 ┇ 6 Months\n▸ $9 ┇ 1 Year\n▸ $18┇ Vild Till Exist\n\n📌 Payment Methods:\n- UPI ID: dramawave7-1@okaxis\n- QR Code: Pay via UPI\n- Crypto (Binance) & Paypal\n\n📤 After Payment:\n1️⃣ Send a payment screenshot below👇\n2️⃣ Contact Admin to activate your premium\n\n💌 Thank you for supporting this project!❤️\n"
+        "> 💰**Upgrade To Premium**\n\n🚀 Premium Features\n✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos & files from anywhere🎥\n\n🔹Pricing:\n▸ ₹39┇ 1 Week\n▸ ₹50 ┇ 14 Days\n▸ ₹70┇ 20 Days\n▸ ₹80┇ 1 Month\n▸ ₹169 ┇ 3 Months\n▸ ₹ 319┇ 6 Months\n▸ ₹599┇ 1 year\n▸ ₹1.5ᴋ┇ Vild Till Exist\n\n🌐For International Members\n▸ $2 ┇1 Month\n▸ $3 ┇ 3 Months\n▸ $6 ┇ 6 Months\n▸ $9 ┇ 1 Year\n▸ $18┇ Vild Till Exist\n\n📌 Payment Methods:\n- UPI ID: dramawave7-1@okaxis\n- QR Code: Pay via UPI\n- Crypto (Binance) & Paypal\n\n📤 After Payment:\n1️⃣ Send a payment screenshot below👇\n2️⃣ Contact Admin to activate your premium\n\n💌 Thank you for supporting this project!❤️\n"
     )
      
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 Pay Here", url="https://assets72729.github.io/PayWeb/")],
-            [InlineKeyboardButton("💬 Send Screenshot", url="https://t.me/NkkwkslBot")],
+            [InlineKeyboardButton("💬 Contact Admin", url="https://t.me/Nkkwksl")],
         ]
     )
     await callback_query.message.edit_text(plan_text, reply_markup=buttons)
