@@ -73,8 +73,8 @@ async def token_handler(client, message):
     msg = await app.get_messages(chat_id, 796)
     user_id = message.chat.id
     if len(message.command) <= 1:
-        image_url = "https://graph.org/file/ffae3d01dcdd6359106fd-c0fd8ab0d2c46539be.jpg"
-        join_button = InlineKeyboardButton("Our Updates Channel", url="https://t.me/smartkitbots")
+        image_url = "https://graph.org/file/94bf9089d43b817bb76d2-c0ccb0de00b10adf9e.jpg"
+        join_button = InlineKeyboardButton("Updates Channel", url="https://t.me/smartkitbots")
         premium = InlineKeyboardButton("How To Use Me", url="https://t.me/smartkitbots/5")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
