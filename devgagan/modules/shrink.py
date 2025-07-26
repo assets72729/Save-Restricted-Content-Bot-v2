@@ -75,7 +75,7 @@ async def token_handler(client, message):
     if len(message.command) <= 1:
         image_url = "https://graph.org/file/94bf9089d43b817bb76d2-c0ccb0de00b10adf9e.png"
         join_button = InlineKeyboardButton("Updates Channel", url="https://t.me/smartkitbots")
-        premium = InlineKeyboardButton("How To Use Me", url="https://t.me/smartkitbots/8")   
+        premium = InlineKeyboardButton("How To Use Me", url="https://t.me/smartkitbots/28")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
