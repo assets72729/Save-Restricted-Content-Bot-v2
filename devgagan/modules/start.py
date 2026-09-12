@@ -109,7 +109,7 @@ help_pages = [
         "> 4. REPLACEWORDS : Can be used for words in deleted set via REMOVE WORDS\n"
         "> 5. RESET : To set the things back to default\n\n"
         "> You can set CUSTOM THUMBNAIL, PDF WATERMARK, VIDEO WATERMARK, SESSION-based login, etc. from settings\n\n"
-        "**__Powered by Joseph__**"
+        "**__Powered by Team SPY__**"
     )
 ]
  
@@ -176,14 +176,14 @@ async def terms(client, message):
     terms_text = (
         "> 📜 **Terms and Conditions** 📜\n\n"
         "✨ We are not responsible for user deeds, and we do not promote copyrighted content. If any user engages in such activities, it is solely their responsibility.\n"
-        "✨ Upon purchase, we do guarantee the uptime, downtime, or the validity of the plan. __Authorization and banning of users are at our discretion; we reserve the right to ban or authorize users at any time.__\n"
+        "✨ Upon purchase, we do not guarantee the uptime, downtime, or the validity of the plan. __Authorization and banning of users are at our discretion; we reserve the right to ban or authorize users at any time.__\n"
         "✨ Payment to us **__does not guarantee__** authorization for the /batch command. All decisions regarding authorization are made at our discretion and mood.\n"
     )
      
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/Nkkwksl")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
         ]
     )
     await message.reply_text(terms_text, reply_markup=buttons)
@@ -192,13 +192,17 @@ async def terms(client, message):
 @app.on_message(filters.command("plan") & filters.private)
 async def plan(client, message):
     plan_text = (
-        "> 💰 **Upgrade To Premium**:\n\n🚀 Premium Features\n✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos & files from anywhere🎥\n\n🔹Pricing:\n▸ ₹39 ┇ 1 Week\n▸ ₹50 ┇ 14 Days\n▸ ₹70 ┇20 Days\n▸ ₹80 ┇1 Month\n▸ ₹169┇ 3 Months\n▸ ₹ 319┇ 6 Months\n▸ ₹599 ┇ 1 Year\n▸ ₹1.5ᴋ ┇ Vild Till Exist\n\n🌐For International Members\n▸ $2 ┇1 Month\n▸ $3 ┇ 3 Months\n▸ $6 ┇ 6 Months\n▸ $9 ┇ 1 Year\n▸ $18┇ Vild Till Exist\n\n📌 Payment Methods:\n- UPI ID: dramawave7-1@okaxis\n- QR Code: Pay via UPI\n- Crypto (Binance) & Paypal\n\n📤 After Payment:\n1️⃣ Send a payment screenshot below👇\n2️⃣ Contact Admin to activate your Premium\n\n💌 Thank you for supporting this project!❤️\n"
+        "> 💰 **Premium Price**:\n\n Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).\n"
+        "📥 **Download Limit**: Users can download up to 100,000 files in a single batch command.\n"
+        "🛑 **Batch**: You will get two modes /bulk and /batch.\n"
+        "   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n"
+        "📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.\n"
     )
      
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("📋 Pay Here", url="https://assets72729.github.io/PayWeb/")],
-            [InlineKeyboardButton("💬 Contact Admin", url="https://t.me/Nkkwksl")],
+            [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
         ]
     )
     await message.reply_text(plan_text, reply_markup=buttons)
@@ -207,13 +211,17 @@ async def plan(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> 💰**Upgrade To Premium**\n\n🚀 Premium Features\n✅ No verification every 2 hours ⏳\n✅ Upload in bulk (up to 2000 files)\n✅ Instantly skip the 300-second wait ⏱️\n✅ Extract unlimited videos & files from anywhere🎥\n\n🔹Pricing:\n▸ ₹39┇ 1 Week\n▸ ₹50 ┇ 14 Days\n▸ ₹70┇ 20 Days\n▸ ₹80┇ 1 Month\n▸ ₹169 ┇ 3 Months\n▸ ₹ 319┇ 6 Months\n▸ ₹599┇ 1 year\n▸ ₹1.5ᴋ┇ Vild Till Exist\n\n🌐For International Members\n▸ $2 ┇1 Month\n▸ $3 ┇ 3 Months\n▸ $6 ┇ 6 Months\n▸ $9 ┇ 1 Year\n▸ $18┇ Vild Till Exist\n\n📌 Payment Methods:\n- UPI ID: dramawave7-1@okaxis\n- QR Code: Pay via UPI\n- Crypto (Binance) & Paypal\n\n📤 After Payment:\n1️⃣ Send a payment screenshot below👇\n2️⃣ Contact Admin to activate your premium\n\n💌 Thank you for supporting this project!❤️\n"
+        "> 💰**Premium Price**\n\n Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).\n"
+        "📥 **Download Limit**: Users can download up to 100,000 files in a single batch command.\n"
+        "🛑 **Batch**: You will get two modes /bulk and /batch.\n"
+        "   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n"
+        "📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms or click See Terms👇\n"
     )
      
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("📋 Pay Here", url="https://assets72729.github.io/PayWeb/")],
-            [InlineKeyboardButton("💬 Contact Admin", url="https://t.me/Nkkwksl")],
+            [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
         ]
     )
     await callback_query.message.edit_text(plan_text, reply_markup=buttons)
@@ -224,14 +232,14 @@ async def see_terms(client, callback_query):
     terms_text = (
         "> 📜 **Terms and Conditions** 📜\n\n"
         "✨ We are not responsible for user deeds, and we do not promote copyrighted content. If any user engages in such activities, it is solely their responsibility.\n"
-        "✨ Upon purchase, we do guarantee the uptime, downtime, or the validity of the plan. __Authorization and banning of users are at our discretion; we reserve the right to ban or authorize users at any time.__\n"
-        "✨ Payment to us **__does guarantee__** authorization for the /batch command. All decisions regarding authorization are made at our discretion and mood.\n"
+        "✨ Upon purchase, we do not guarantee the uptime, downtime, or the validity of the plan. __Authorization and banning of users are at our discretion; we reserve the right to ban or authorize users at any time.__\n"
+        "✨ Payment to us **__does not guarantee__** authorization for the /batch command. All decisions regarding authorization are made at our discretion and mood.\n"
     )
      
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("📋 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Contact Us", url="https://t.me/NkkwkslBot")],
+            [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
         ]
     )
     await callback_query.message.edit_text(terms_text, reply_markup=buttons)
