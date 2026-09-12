@@ -227,11 +227,11 @@ async def batch_link(_, message):
         await message.reply(response_message)
         return
         
-    join_button = InlineKeyboardButton("Join SmartKit Bots", url="https://t.me/SmartKitBots")
+    join_button = InlineKeyboardButton("Join SmartKit Bots", url="https://t.me/tubi_bots")
     keyboard = InlineKeyboardMarkup([[join_button]])
     pin_msg = await app.send_message(
         user_id,
-        f"Batch process started ⚡\nProcessing: 0/{cl}\n\n**Powered by SmartKit Bots**",
+        f"Batch process started ⚡\nProcessing: 0/{cl}\n\n**Powered by Tubi Bots**",
         reply_markup=keyboard
     )
     await pin_msg.pin(both_sides=True)
@@ -250,14 +250,14 @@ async def batch_link(_, message):
                     msg = await app.send_message(message.chat.id, f"Processing...")
                     await process_and_upload_link(userbot, user_id, msg.id, link, 0, message)
                     await pin_msg.edit_text(
-                        f"Batch process started ⚡\nProcessing: {i - cs + 1}/{cl}\n\n**__Powered by SmartKit Bots__**",
+                        f"Batch process started ⚡\nProcessing: {i - cs + 1}/{cl}\n\n**__Powered by Tubi Bots__**",
                         reply_markup=keyboard
                     )
                     normal_links_handled = True
         if normal_links_handled:
             await set_interval(user_id, interval_minutes=300)
             await pin_msg.edit_text(
-                f"Batch completed successfully for {cl} messages 🎉\n\n**__Powered by SmartKit Bots__**",
+                f"Batch completed successfully for {cl} messages 🎉\n\n**__Powered by Tubi Bots__**",
                 reply_markup=keyboard
             )
             await app.send_message(message.chat.id, "Batch completed successfully! 🎉")
@@ -276,13 +276,13 @@ async def batch_link(_, message):
                     msg = await app.send_message(message.chat.id, f"Processing...")
                     await process_and_upload_link(userbot, user_id, msg.id, link, 0, message)
                     await pin_msg.edit_text(
-                        f"Batch process started ⚡\nProcessing: {i - cs + 1}/{cl}\n\n**__Powered by SmartKit Bots__**",
+                        f"Batch process started ⚡\nProcessing: {i - cs + 1}/{cl}\n\n**__Powered by Tubi Bots__**",
                         reply_markup=keyboard
                     )
 
         await set_interval(user_id, interval_minutes=300)
         await pin_msg.edit_text(
-            f"Batch completed successfully for {cl} messages 🎉\n\n**__Powered by SmartKit Bots__**",
+            f"Batch completed successfully for {cl} messages 🎉\n\n**__Powered by Tubi Bots__**",
             reply_markup=keyboard
         )
         await app.send_message(message.chat.id, "Batch completed successfully! 🎉")
